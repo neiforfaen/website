@@ -1,0 +1,90 @@
+---
+title: 'Fundamentals'
+description: 'The fundamentals of CSS.'
+icon: 'tally-1'
+---
+
+## Useful Resources
+
+- [Flexbox Froggy](https://flexboxfroggy.com/)
+- [Grid Garden](https://cssgridgarden.com/)
+- [CSS Tricks](https://css-tricks.com/)
+- [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [Beginner's Guide to Responsive Design](https://kinsta.com/blog/responsive-web-design/)
+
+## What is CSS?
+
+CSS (Cascading Style Sheets) is a styling language used to describe the presentation of a document written in HTML or XML.
+It defines how elements should be displayed on screen, on paper, or in other media. CSS is a cornerstone technology of
+the World Wide Web, alongside HTML and JavaScript.
+
+CSS separates the design from the content, allowing for greater flexibility and control over the layout, colors, and
+fonts of web pages. It uses a system of selectors to target HTML elements and apply styles to them.
+
+CSS supports responsive design through media queries, enabling the creation of layouts that adapt to different screen
+sizes and devices.
+
+The cascade, inheritance, and specificity are key concepts in CSS that determine how styles are applied when multiple
+rules target the same element. Modern CSS includes features like Flexbox and Grid for advanced layout control, animations,
+and transitions for creating dynamic user interfaces.
+
+## Creating layouts
+
+Making layouts in web design involves organizing content and visual elements on a page to create an effective and
+aesthetically pleasing user interface. Modern layout techniques primarily use CSS, with key approaches including:
+
+- Flexbox for one-dimensional layouts (rows or columns)
+- CSS Grid for two-dimensional layouts
+- Responsive design principles for adaptability across devices
+- CSS frameworks like Bootstrap or Tailwind for rapid development
+- Custom CSS properties (variables) for consistent styling
+- Media queries for device-specific adjustments
+- CSS positioning and float for specific element placement
+
+These tools allow designers to create complex, responsive layouts that maintain consistency and usability across various
+screen sizes and devices. Effective layouts consider visual hierarchy, user flow, accessibility, and content prioritization
+to enhance the overall user experience and achieve design goals.
+
+## The Box Model
+
+The CSS Box Model is a fundamental concept in web design and layout. Every HTML element is considered a rectangular box,
+and the box model describes the structure of that box. Understanding how it works helps in controlling spacing, layout,
+and element sizing.
+
+Each element's box consists of four main components:
+
+```css
+.box-model {
+    width: 200px; /* Content width */
+    height: 100px; /* Content height */
+    padding: 20px; /* Space between content and border */
+    margin: 10px; /* Space outside the border */
+}
+```
+
+### Box Sizing
+
+The `box-sizing` property determines how the width and height of an element are calculated. The two most common values
+are:
+
+- `content-box`: The default value. Width and height include only the content, excluding padding and border.
+- `border-box`: Width and height include content, padding, and border. This makes it easier to manage element sizes without
+worrying about additional padding or borders.
+
+```css
+box-sizing: content-box; /* Default */
+box-sizing: border-box; /* Preffered */
+```
+
+## Responsive Design
+
+Responsive web design is an approach to web development that creates dynamic changes to the appearance of a website,
+depending on the screen size and orientation of the device being used to view it.
+
+It uses fluid grids, flexible images, and CSS media queries to adapt the layout to the viewing environment.
+
+The goal is to build web pages that detect the visitor's screen size and orientation and change the layout accordingly,
+providing an optimal viewing experience across a wide range of devices, from desktop computers to mobile phones.
+
+This approach eliminates the need for a different design and development phase for each new gadget on the market, while
+ensuring a consistent and intuitive user experience across all devices.

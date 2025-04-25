@@ -1,0 +1,73 @@
+---
+title: 'Package Managers'
+description: 'Automate the process of installing, updating, configuring, and removing software packages.'
+icon: 'npm'
+---
+
+## Introduction
+
+Package managers are tools that automate the process of installing, updating, configuring, and removing software packages
+in a consistent manner. They handle dependency resolution, version management, and package distribution for programming
+languages and operating systems.
+
+Popular package managers include npm for JavaScript, pip for Python, and apt for Debian-based Linux distributions.
+
+These tools maintain a centralized repository of packages, allowing developers to easily share and reuse code.
+Package managers simplify project setup, ensure consistency across development environments, and help manage complex
+dependency trees.
+
+They play a crucial role in modern software development by streamlining workflow, enhancing collaboration, and improving
+code reusability.
+
+## Package Managers
+
+### npm
+
+npm (Node Package Manager) is the default package manager for Node.js, providing a vast ecosystem of reusable JavaScript
+code. It allows developers to easily share, discover, and install packages (libraries and tools) for their projects.
+
+npm consists of a command-line interface for package installation and management, and an online repository of open-source
+packages.
+
+It handles dependency management, version control, and script running for Node.js projects. The npm registry is the
+largest software registry in the world, containing over a million packages.
+
+npm's package.json file defines project metadata and dependencies, enabling reproducible builds across different
+environments.
+
+Despite competition from alternatives like Yarn, npm remains the most widely used package manager in the JavaScript
+ecosystem.
+
+### pnpm
+
+pnpm (performant npm) is a fast, disk-space efficient package manager for JavaScript and Node.js projects. It addresses
+inefficiencies in npm and Yarn by using a unique approach to storing and linking dependencies.
+
+pnpm creates a single, global store for all packages and uses hard links to reference them in project node_modules,
+significantly reducing disk space usage and installation time.
+
+It strictly adheres to package.json specifications, ensuring consistent installs across environments. pnpm offers
+features like workspace support for monorepos, side-by-side versioning, and improved security through better isolation
+of dependencies.
+
+While less widely adopted than npm or Yarn, pnpm's performance benefits and efficient disk usage are attracting
+increasing attention in the JavaScript community.
+
+### Yarn
+
+Yarn is a fast, reliable, and secure package manager for JavaScript, developed by Facebook as an alternative to npm
+(Node Package Manager).
+
+It addresses issues of consistency, security, and performance in dependency management. Yarn uses a lockfile to ensure
+consistent installations across different environments and offers parallel installation of packages, significantly
+speeding up the process.
+
+It features offline mode, allowing installation from cached packages, and provides improved network performance through
+request queuing and retries.
+
+Yarn's focus on security includes checksum verification of every installed package. While it shares many features with
+npm, Yarn's emphasis on speed, reliability, and security has made it a popular choice among developers, especially for
+larger projects.
+
+Recent versions of Yarn (Berry) introduce new features like Plug'n'Play for even faster and more efficient package
+resolution.

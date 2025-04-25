@@ -1,0 +1,81 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "maple",
+  "name": "docs/kaiden",
+  "description": "A personal knowledge hub where I’ll document and share notes, insights, and lessons learned throughout my journey as a software engineer. - kaiden.sh",
+  "colors": {
+    "primary": "#16A34A",
+    "light": "#07C983",
+    "dark": "#15803D"
+  },
+  "favicon": "/favicon.svg",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Learning",
+        "groups": [
+          {
+            "group": "Introduction",
+            "pages": ["introduction"]
+          },
+          {
+            "group": "Frontend",
+            "pages": [
+              "frontend/the-internet",
+              "frontend/html",
+              {
+                "group": "CSS",
+                "icon": "css3",
+                "pages": [
+                  "frontend/css/css-basics",
+                  "frontend/css/css-advanced"
+                ]
+              },
+              {
+                "group": "JavaScript",
+                "icon": "js",
+                "pages": ["frontend/js/js"]
+              },
+              "frontend/version-control",
+              "frontend/package-managers"
+            ]
+          },
+          {
+            "group": "Progression Topics (WIP)",
+            "pages": ["progression/networking", "progression/browsers"]
+          }
+        ]
+      },
+      {
+        "tab": "Examples",
+        "groups": [
+          {
+            "group": "TypeScript",
+            "pages": ["code-examples/typescript"]
+          }
+        ]
+      }
+    ],
+    "global": {
+      "anchors": [
+        {
+          "anchor": "github/neiforfaen",
+          "href": "https://github.com/neiforfaen",
+          "icon": "github"
+        },
+        {
+          "anchor": "linkedin/kaiden",
+          "href": "https://linkedin.com/in/kaiden-riley",
+          "icon": "linkedin"
+        }
+      ]
+    }
+  },
+  "navbar": {
+    "primary": {
+      "type": "button",
+      "label": "Portfolio",
+      "href": "https://kaiden.sh"
+    }
+  }
+}
