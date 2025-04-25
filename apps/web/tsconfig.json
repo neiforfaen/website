@@ -1,0 +1,18 @@
+{
+  "extends": ["@nff/typescript-config/nextjs.json"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./*"],
+      "@nff/*": ["../../packages/*"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "next.config.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "../../packages/design-system/components/language-switcher.tsx"
+  ]
+}

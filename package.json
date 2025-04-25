@@ -1,0 +1,27 @@
+{
+  "name": "website",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "lint": "ultracite lint",
+    "format": "ultracite format",
+    "bump-deps": "npx npm-check-updates --deep -u -x react-day-picker && pnpm install",
+    "bump-ui": "npx shadcn@latest add --all --overwrite -c packages/design-system",
+    "clean": "git clean -xdf node_modules"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@nff/typescript-config": "workspace:*",
+    "@types/node": "^22.15.2",
+    "turbo": "^2.5.1",
+    "typescript": "^5.8.3",
+    "ultracite": "^4.2.1"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "packageManager": "pnpm@10.9.0",
+  "type": "module"
+}
