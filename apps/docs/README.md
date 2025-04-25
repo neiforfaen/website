@@ -1,4 +1,4 @@
-# docs
+# docs @ [docs.kaiden.sh](https://docs.kaiden.sh)
 
 Serves as a personal knowledge hub where I’ll document and share notes, insights, and lessons learned throughout my journey as a software engineer. Whether it’s coding practices, debugging tips, tools worth exploring, or conceptual breakthroughs, this space will capture the essence of my growth and exploration.
 
