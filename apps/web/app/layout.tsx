@@ -2,6 +2,7 @@ import './styles.css'
 import { DesignSystemProvider } from '@nff/design-system'
 import { fonts } from '@nff/design-system/lib/fonts'
 import { cn } from '@nff/design-system/lib/utils'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 import type { ReactNode } from 'react'
 import { Header } from './components/header'
 
@@ -21,6 +22,7 @@ const RootLayout = ({ children }: RootLayoutProperties) => {
           <Header />
           {children}
         </DesignSystemProvider>
+        <SpeedInsights />
       </body>
     </html>
   )
