@@ -139,7 +139,6 @@
   }
 }
 
-/* This layer is added by shadcn/ui */
 @layer base {
   * {
     @apply border-border outline-ring/50;
@@ -149,7 +148,6 @@
   }
 }
 
-/* This layer is by next-forge */
 @layer base {
   ::after,
   ::before,
@@ -173,6 +171,13 @@
   button:not(:disabled),
   [role="button"]:not(:disabled) {
     @apply cursor-pointer;
+  }
+}
+
+/* Gradients */
+@layer theme {
+  .multi-gradient {
+    @apply dark:bg-center dark:bg-contain dark:bg-linear-[45deg,var(--color-sun-yellow)_0%,var(--color-sunset-orange)_33%,var(--color-vivid-pink)_66%,var(--color-electric-purple)_100%];
   }
 }
 
@@ -216,4 +221,9 @@
   --breakpoint-xl: 75rem;
   --breakpoint-2xl: 87.5rem;
   --breakpoint-3xl: 100rem;
+  --color-shadow-lilac: oklch(0.5 0.29 275);
+  --color-sun-yellow: oklch(0.85 0.22 95);
+  --color-sunset-orange: oklch(0.7 0.23 58);
+  --color-vivid-pink: oklch(0.63 0.27 22);
+  --color-electric-purple: oklch(0.53 0.22 306);
 }

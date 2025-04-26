@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react'
 
 export const TickingClock = () => {
-  const getTime = () => {
+  const getTime = (): string => {
     const now = new Date()
 
     const opts: Intl.DateTimeFormatOptions = {
@@ -16,7 +16,7 @@ export const TickingClock = () => {
     return now.toLocaleTimeString('en-US', opts)
   }
 
-  const [time, setTime] = useState(getTime())
+  const [time, setTime] = useState('')
 
   // biome-ignore lint/correctness/useExhaustiveDependencies: getTime changes on every render
   useEffect(() => {
