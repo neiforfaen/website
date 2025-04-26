@@ -215,4 +215,5 @@
 @theme {
   --breakpoint-xl: 75rem;
   --breakpoint-2xl: 87.5rem;
+  --breakpoint-3xl: 100rem;
 }

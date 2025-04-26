@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <div
       id="portfolio-container"
-      className="mx-auto my-0 mt-[70px] animate-[fadeBlur_2.5s_ease-in-out_forwards] xl:my-0 xl:w-[1200px]"
+      className="mx-auto my-0 mt-[70px] 3xl:w-[1400px] animate-[fadeBlur_2.5s_ease-in-out_forwards] xl:my-0 xl:w-[1200px]"
     >
       <div
         id="intro-section"
