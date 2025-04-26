@@ -1,10 +1,10 @@
 import './styles.css'
 import { DesignSystemProvider } from '@nff/design-system'
+import { NoiseCanvas } from '@nff/design-system/components/noise-canvas'
 import { fonts } from '@nff/design-system/lib/fonts'
 import { cn } from '@nff/design-system/lib/utils'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import type { ReactNode } from 'react'
-import { Header } from './components/header'
 
 type RootLayoutProperties = {
   readonly children: ReactNode
@@ -17,11 +17,9 @@ const RootLayout = ({ children }: RootLayoutProperties) => {
       className={cn(fonts, 'scroll-smooth')}
       suppressHydrationWarning
     >
-      <body>
-        <DesignSystemProvider>
-          <Header />
-          {children}
-        </DesignSystemProvider>
+      <body style={{ cursor: 'crosshair' }}>
+        <NoiseCanvas />
+        <DesignSystemProvider>{children}</DesignSystemProvider>
         <SpeedInsights />
       </body>
     </html>

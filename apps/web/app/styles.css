@@ -1,1 +1,25 @@
 @import "@nff/design-system/styles/globals.css";
+
+@keyframes noise-animation {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 500px 500px;
+  }
+}
+
+@keyframes fadeBlur {
+  0% {
+    filter: blur(10px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+.noise-animate {
+  animation: noise-animation 5s ease-in-out infinite;
+}

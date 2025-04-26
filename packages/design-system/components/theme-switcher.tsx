@@ -6,6 +6,7 @@ import { useTheme } from 'next-themes'
 import { useEffect, useState } from 'react'
 import type * as React from 'react'
 import type { ButtonHTMLAttributes } from 'react'
+import { Skeleton } from './ui/skeleton'
 
 const themes = [
   { label: 'Light', value: 'light', icon: SunIcon },
@@ -57,9 +58,7 @@ export const ThemeSwitcher = () => {
   }, [])
 
   if (!mounted) {
-    return (
-      <div className="flex h-[39px] w-[117px] flex-row items-center justify-center gap-2 rounded-md bg-secondary p-1" />
-    )
+    return <Skeleton className={'h-[39px] w-[117px]'} />
   }
 
   return (
