@@ -29,7 +29,7 @@ export const TickingClock = () => {
 
   return (
     <p id="status-description" className="m-0 mt-1 text-[#7c7c83]">
-      {time}
+      {time || '04:20'}
     </p>
   )
 }
