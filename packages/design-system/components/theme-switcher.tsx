@@ -1,7 +1,7 @@
 'use client'
 
 import { cn } from '@nff/design-system/lib/utils'
-import { DesktopIcon, MoonIcon, SunIcon } from '@radix-ui/react-icons'
+import { MoonIcon, SunIcon } from '@radix-ui/react-icons'
 import { useTheme } from 'next-themes'
 import { useEffect, useState } from 'react'
 import type * as React from 'react'
@@ -11,7 +11,6 @@ import { Skeleton } from './ui/skeleton'
 const themes = [
   { label: 'Light', value: 'light', icon: SunIcon },
   { label: 'Dark', value: 'dark', icon: MoonIcon },
-  { label: 'System', value: 'system', icon: DesktopIcon },
 ] as const
 
 interface IconProps extends React.SVGAttributes<SVGElement> {
