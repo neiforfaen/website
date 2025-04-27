@@ -43,3 +43,4 @@ yarn-error.log*
 # AI Rules
 .cursorrules
 .github/copilot-instructions.md
+.env*.local
