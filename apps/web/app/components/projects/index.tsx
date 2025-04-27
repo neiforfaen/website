@@ -64,12 +64,7 @@ export const Projects = () => {
           'card-base flex flex-col items-center justify-center xl:ml-[72px] xl:[display:initial]'
         )}
       >
-        <a
-          href="/"
-          target="_blank"
-          rel="noreferrer"
-          className="decoration-none"
-        >
+        <a href="/" className="decoration-none">
           <div className="mt-[72px] flex h-[350px] w-[350px] items-center justify-center rounded-[44px] bg-foreground xl:mt-[initial] xl:h-[612px] xl:w-[618px] 2xl:w-[690px] dark:bg-[#403DFF]">
             {isDevEnv ? (
               <div />
