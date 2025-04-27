@@ -1,5 +1,9 @@
 @import "@nff/design-system/styles/globals.css";
 
+* {
+  scrollbar-width: none;
+}
+
 @keyframes noise-animation {
   0% {
     background-position: 0 0;
