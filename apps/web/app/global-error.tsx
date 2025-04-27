@@ -1,18 +1,24 @@
 'use client'
 
+import { NoiseCanvas } from '@nff/design-system/components/noise-canvas'
 import { Button } from '@nff/design-system/components/ui/button'
 import { fonts } from '@nff/design-system/lib/fonts'
 
-type GlobalErrorProperties = {
-  readonly reset: () => void
-}
-
-const GlobalError = ({ reset }: GlobalErrorProperties) => {
+const GlobalError = () => {
   return (
     <html lang="en" className={fonts}>
-      <body>
-        <h1>Oops, something went wrong</h1>
-        <Button onClick={() => reset()}>Try again</Button>
+      <body className="bg-foreground">
+        <NoiseCanvas />
+        <div className="flex h-screen w-screen items-center justify-center">
+          <div className="flex flex-col items-center justify-center gap-10">
+            <h1 className="font-semibold text-4xl text-background">
+              Oops, something went wrong!
+            </h1>
+            <Button size={'lg'} onClick={() => window.location.reload()}>
+              Try again
+            </Button>
+          </div>
+        </div>
       </body>
     </html>
   )
