@@ -15,7 +15,7 @@
     "@biomejs/biome": "1.9.4",
     "@nff/typescript-config": "workspace:*",
     "@types/node": "^22.15.2",
-    "turbo": "^2.5.1",
+    "turbo": "^2.5.2",
     "typescript": "^5.8.3",
     "ultracite": "^4.2.1"
   },
