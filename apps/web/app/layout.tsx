@@ -47,8 +47,8 @@ const RootLayout = ({ children }: RootLayoutProperties) => {
       <body style={{ cursor: 'crosshair' }}>
         <NoiseCanvas />
         <DesignSystemProvider>
-            {children}
-            <Footer />
+          {children}
+          <Footer />
         </DesignSystemProvider>
         <SpeedInsights />
       </body>
