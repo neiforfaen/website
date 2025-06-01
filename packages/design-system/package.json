@@ -61,7 +61,7 @@
   },
   "devDependencies": {
     "@nff/typescript-config": "workspace:*",
-    "@tailwindcss/postcss": "^4.1.4",
+    "@tailwindcss/postcss": "^4.1.8",
     "@tailwindcss/typography": "^0.5.16",
     "@types/node": "^22.15.2",
     "@types/react": "^19.1.2",
